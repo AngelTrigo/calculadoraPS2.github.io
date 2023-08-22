@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Juegos para Pendrive</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Calculadora de Juegos para Pendrive</h1>
+    
+        <p>Bienvenido a nuestra calculadora de juegos para pendrive. Esta herramienta te ayudará a determinar cuántos juegos puedes cargar en tu pendrive considerando su capacidad de almacenamiento.</p>
+        <p>Por favor, seleccione su pendrive, ya que le permitirá saber cuantos juegos entran</p>
+    
+    </div>
+    <div>
+        <label for="pendrive">Selecciona tu pendrive:</label>
+        <select id="pendrive">
+        <option value="8">8GB</option>
+        <option value="16">16GB</option>
+        <option value="32">32GB</option>
+        <option value="64">64GB</option>
+    </select>
+    </div>
+    
+    <div>
+        <h2>Catalogo de Juegos</h2>
+        <form id="gameForm">
+            <!-- Aquí generamos dinámicamente la lista de juegos con checkboxes -->
+            <!-- Cada juego tiene su nombre, tamaño en GB y un checkbox -->
+            <input type="checkbox" name="game" value="Ace combat 5:3.61">Ace combat 5 (3.61 GB)<br>
+            <input type="checkbox" name="game" value="Area 51:3.26">Area 51 (3.26 GB)<br>
+            <input type="checkbox" name="game" value="Atari Antology:1.76">Atari Antology (1.76 GB)<br>
+            <input type="checkbox" name="game" value="	Ace combat 5	:	3.61	">	Ace combat 5 (3,61 gb)	<br>
+            <input type="checkbox" name="game" value="	Area 51	:	3.26	">	Area 51 (3,26 gb)	<br>
+            <input type="checkbox" name="game" value="	Atari Antology	:	1.76	">	Atari Antology (1,76 gb)	<br>
+            <input type="checkbox" name="game" value="	ATV Offroad Fury	:	0.841	">	ATV Offroad Fury [Inglés] (841mb)	<br>
+            <input type="checkbox" name="game" value="	ATV Offroad Fury 2	:	4.17	">	ATV Offroad Fury 2 [Inglés] (4,17 gb)	<br>
+            <input type="checkbox" name="game" value="	ATV Offroad Fury 4	:	7	">	ATV Offroad Fury 4 [Ingles] (7gb)	<br>
+            <input type="checkbox" name="game" value="	Avatar The last airbender	:	1.50	">	Avatar: The last airbender (1,50gb)	<br>
+            <input type="checkbox" name="game" value="	Battle Stadium DON	:	0.590	">	Battle Stadium D.O.N (590mb)	<br>
+            <input type="checkbox" name="game" value="	Barbie la isla de princesas	:	1.62	">	Barbie la isla de princesas (1,62gb)	<br>
+            <input type="checkbox" name="game" value="	Barbie aventuras a caballo	:	1.19	">	Barbie aventuras a caballo (1,19gb)	<br>
+            <input type="checkbox" name="game" value="	Barbie Escuela de Equitacion	:	2.04	">	Barbie Escuela de Equitacion (2,04gb)	<br>
+            <input type="checkbox" name="game" value="	Barbie y las 12 princesas	:	3.21	">	Barbie y las 12 princesas (3,21gb)	<br>
+            <input type="checkbox" name="game" value="	Ben 10 Alien Force	:	2.18	">	Ben 10: Alien Force (2,18gb)	<br>
+            <input type="checkbox" name="game" value="	Ben 10 Protector of Earth	:	3.19	">	Ben 10: Protector of Earth (3,19gb)	<br>
+            <input type="checkbox" name="game" value="	Bully	:	4.31	">	Bully (4,31 gb)	<br>
+            <input type="checkbox" name="game" value="	Black	:	3.64	">	Black [Español] (3,64gb)	<br>
+            <input type="checkbox" name="game" value="	Bournout 3	:	2.39	">	Bournout 3 [Español] (2,39gb)	<br>
+            <input type="checkbox" name="game" value="	Bournout Dominator	:	4.33	">	Bournout- Dominator [Español] (4,33gb)	<br>
+            <input type="checkbox" name="game" value="	Call of Duty Finest hour	:	3.58	">	Call of Duty- Finest hour (3,58gb)	<br>
+            <input type="checkbox" name="game" value="	Call of Duty World at War	:	3.12	">	Call of Duty-World at War [Español] (3,12gb)	<br>
+            <input type="checkbox" name="game" value="	Capcom Classics Collection Volume 2	:	3	">	Capcom Classics Collection Volume 2 [Inglés] (3,00gb)	<br>
+            <input type="checkbox" name="game" value="	Casa Fantasmas	:	4.35	">	Casa Fantasmas [Español] (4,35gb)	<br>
+            <input type="checkbox" name="game" value="	Chaos Legion	:	4.37	">	Chaos Legion [Español] (4,37gb)	<br>
+            <input type="checkbox" name="game" value="	Chicken Little	:	1.89	">	Chicken Little (1,89gb)	<br>
+            <input type="checkbox" name="game" value="	Clock tower 3	:	4.28	">	Clock tower 3 (4,28gb)	<br>
+            <input type="checkbox" name="game" value="	Cold Fear 	:	3.33	">	Cold Fear (3,33gb)	<br>
+            <input type="checkbox" name="game" value="	Cold Winter	:	3.85	">	Cold Winter [Español] (3,85gb)	<br>
+            <input type="checkbox" name="game" value="	Collin MCRAE 2005	:	3.96	">	Collin MCRAE 2005 [Español] (3,96gb)	<br>
+            <input type="checkbox" name="game" value="	Conflic- Desert Storm	:	3.93	">	Conflict- Desert Storm [Español] (3,93gb)	<br>
+            <input type="checkbox" name="game" value="	Conflict Global Storm	:	2.29	">	Conflict- Global Storm (2,29gb)	<br>
+            <input type="checkbox" name="game" value="	Conflict Vietnam	:	2.48	">	Conflict- Vietnam [Español] (2,48gb)	<br>
+            <input type="checkbox" name="game" value="	Clausura 2011	:	3.20	">	Clausura 2011 (3,20gb)	<br>
+            <input type="checkbox" name="game" value="	Crash La venganza de Cortex	:	0.500	">	Crash- La venganza de Cortex (500mb)	<br>
+            <input type="checkbox" name="game" value="	Crash Mind over Mutant	:	2.98	">	Crash- Mind over Mutant [Español] (2,98gb)	<br>
+            <input type="checkbox" name="game" value="	Crash Nitro Kart	:	0.445	">	Crash- Nitro Kart [Ver idioma] (445mb)	<br>
+            <input type="checkbox" name="game" value="	Crash TwinSanity	:	2.38	">	Crash- TwinSanity [Español] (2,38gb)	<br>
+            <input type="checkbox" name="game" value="	Dakar 2	:	2.15	">	Dakar 2 (2,15 gb)	<br>
+            <input type="checkbox" name="game" value="	Darkwatch	:	4.36	">	Darkwatch [Español] (4,36gb)	<br>
+            <input type="checkbox" name="game" value="	Def Jam Fight for NY	:	4.38	">	Def Jam Fight for NY (4,38gb)	<br>
+            <input type="checkbox" name="game" value="	Delta Force	:	2.29	">	Delta Force [Español] (2,29gb)	<br>
+            <input type="checkbox" name="game" value="	Destroy All Humans	:	4.25	">	Destroy All Humans (4,25gb)	<br>
+            <input type="checkbox" name="game" value="	Devil May Cry	:	4.37	">	Devil May Cry (4,37gb)	<br>
+            <input type="checkbox" name="game" value="	Devil May Cry 2 Dante	:	4.37	">	Devil May Cry 2 (Dante) (4,37gb)	<br>
+            <input type="checkbox" name="game" value="	Devil May Cry 2 Lucia	:	4.37	">	Devil May Cry 2 (Lucia) (4,37gb)	<br>
+            <input type="checkbox" name="game" value="	Devil May Cry 3	:	4.18	">	Devil May Cry 3 (4,18gb)	<br>
+            <input type="checkbox" name="game" value="	Dragon ball Z budokai AF	:	1.64	">	Dragon ball Z budokai AF (1,64gb)	<br>
+            <input type="checkbox" name="game" value="	Dragon ball Z Budokai Tenkaichi 3	:	4.02	">	Dragon ball Z Budokai Tenkaichi 3 (4,02gb)	<br>
+            <input type="checkbox" name="game" value="	Dragon ball Z Budokai Tenkaichi 4	:	3.86	">	Dragon ball Z Budokai Tenkaichi 4 (3,86gb)	<br>
+            <input type="checkbox" name="game" value="	Dragon ball Z Infinity world	:	2.56	">	Dragon ball Z- Infinity world (2,56gb)	<br>
+            <input type="checkbox" name="game" value="	Dragon ball Z Sagas	:	1.06	">	Dragon ball Z- Sagas (1,06gb)	<br>
+            <input type="checkbox" name="game" value="	Driver	:	3.98	">	Driver [Español] (3,98gb)	<br>
+            <input type="checkbox" name="game" value="	Ecco el delfin	:	2.15	">	Ecco, el delfín [Español] (2,15gb)	<br>
+            <input type="checkbox" name="game" value="	El señor de los anillos El retorno del rey	:	4.00	">	El señor de los anillos- El retorno del rey (4,00gb)	<br>
+            <input type="checkbox" name="game" value="	El señor de los anillos La comunidad del anillo	:	3.66	">	El señor de los anillos- La comunidad del anillo [Español] (3,66gb)	<br>
+            <input type="checkbox" name="game" value="	El padrino	:	3.63	">	El padrino (3,63gb)	<br>
+            <input type="checkbox" name="game" value="	ePES 2020	:	1.81	">	ePES 2020 [Español] (1,81gb)	<br>
+            <input type="checkbox" name="game" value="	Fahrenheit	:	3.22	">	Fahrenheit [Español] (3,22gb)	<br>
+            <input type="checkbox" name="game" value="	Fatal Frame	:	2.56	">	Fatal Frame [Inglés] (2,56gb)	<br>
+            <input type="checkbox" name="game" value="	Fatal Frame 2	:	3.44	">	Fatal Frame 2 [Español] (3,44gb)	<br>
+            <input type="checkbox" name="game" value="	Fatal frame 3 The tormented	:	2.55	">	Fatal frame 3:  The tormented [Español] (2,55gb)	<br>
+            <input type="checkbox" name="game" value="	Ferrari Challenge trofeo Pirelli	:	2.22	">	Ferrari Challenge- trofeo Pirelli [Español] (2,22gb)	<br>
+            <input type="checkbox" name="game" value="	FIFA street 2	:	3.37	">	FIFA street 2 (3,37gb)	<br>
+            <input type="checkbox" name="game" value="	FIFA 11	:	4.5	">	FIFA 11 (4,5gb)	<br>
+            <input type="checkbox" name="game" value="	FIFA 13	:	3.37	">	FIFA 13 [Español] (3,37gb)	<br>
+            <input type="checkbox" name="game" value="	FIFA 14	:	3.30	">	FIFA 14 [Español] (3,30gb)	<br>
+            <input type="checkbox" name="game" value="	Fight Night Round 2	:	3.66	">	Fight Night Round 2 (3,66gb)	<br>
+            <input type="checkbox" name="game" value="	Fight Night Round 3	:	4.22	">	Fight Night Round 3 (4,22gb)	<br>
+            <input type="checkbox" name="game" value="	Final Fantasy X	:	4.28	">	Final Fantasy X [PAL] [Español] (4,28gb)	<br>
+            <input type="checkbox" name="game" value="	Final Fantasy XI	:	2.66	">	Final Fantasy XI (2,66gb)	<br>
+            <input type="checkbox" name="game" value="	Fire Heroes	:	4.38	">	Fire Heroes (4,38 gb)	<br>
+            <input type="checkbox" name="game" value="	Firefighter FD 18	:	4.05	">	Firefighter FD 18 (4,05gb)	<br>
+            <input type="checkbox" name="game" value="	Fuerza G	:	4.00	">	Fuerza G (4,00gb)	<br>
+            <input type="checkbox" name="game" value="	FreekStyle	:	1.18	">	FreekStyle (1,18gb)	<br>
+            <input type="checkbox" name="game" value="	God of Pes 2011	:	2.75	">	God of Pes 2011 (2,75gb)	<br>
+            <input type="checkbox" name="game" value="	God of Pes 2014	:	2.75	">	God of Pes 2014 (2,75 GB)	<br>
+            <input type="checkbox" name="game" value="	God of War 1	:	3.91	">	God of War 1 (3,91 GB)	<br>
+            <input type="checkbox" name="game" value="	God of War 2	:	3.84	">	God of War 2 [Español] (3,84 GB)	<br>
+            <input type="checkbox" name="game" value="	Gran turismo 4	:	4.35	">	Gran turismo 4 (4,35 GB)	<br>
+            <input type="checkbox" name="game" value="	GTA III	:	4.37	">	GTA III [Español] (4,37 GB)	<br>
+            <input type="checkbox" name="game" value="	GTA Liberty City stories	:	3.37	">	GTA- Liberty City- stories [Español] (3,73 GB)	<br>
+            <input type="checkbox" name="game" value="	GTA SA PARCHES	:	3.73	">	GTA- SA [PARCHES] (3,73 GB)	<br>
+            <input type="checkbox" name="game" value="	GTA San Andreas	:	4.19	">	GTA- San Andreas [Español] (4,19 GB)	<br>
+            <input type="checkbox" name="game" value="	GTA San Andreas Misterix	:	3.74	">	GTA- San Andreas Misterix (3,74 GB)	<br>
+            <input type="checkbox" name="game" value="	GTA Vice City	:	4.37	">	GTA- Vice City [Español] (4,37 GB)	<br>
+            <input type="checkbox" name="game" value="	GTA Vice City Stories	:	3.85	">	GTA- Vice City- Stories [Español] (3,85 GB)	<br>
+            <input type="checkbox" name="game" value="	Guitar Hero III Legends of Rock	:	4.04	">	Guitar Hero III- Legends of Rock [Español] (4,04 GB)	<br>
+            <input type="checkbox" name="game" value="	GUN	:	2.81	">	GUN [Español] (2,81 GB)	<br>
+            <input type="checkbox" name="game" value="	Half Life	:	0.374	">	Half Life (374mb)	<br>
+            <input type="checkbox" name="game" value="	Hitman Blood Money	:	3.63	">	Hitman- Blood Money (3,63 GB)	<br>
+            <input type="checkbox" name="game" value="	Hotweels	:	1.55	">	Hotweels (1,55 GB)	<br>
+            <input type="checkbox" name="game" value="	ICO	:	0.865	">	ICO (865 MB)	<br>
+            <input type="checkbox" name="game" value="	Jackass The game	:	3.86	">	Jackass The game (3,86 GB)	<br>
+            <input type="checkbox" name="game" value="	Just Cause	:	2.49	">	Just Cause (2,49 GB)	<br>
+            <input type="checkbox" name="game" value="	Killzone	:	4.32	">	Killzone (4,32 GB)	<br>
+            <input type="checkbox" name="game" value="	King Kong	:	1.43	">	King Kong (1,43 GB)	<br>
+            <input type="checkbox" name="game" value="	Kuon	:	2.69	">	Kuon (2,69 GB)	<br>
+            <input type="checkbox" name="game" value="	Las aventuras de Billy y Mandy	:	4.28	">	Las aventuras de Billy y Mandy (4,28 gb)	<br>
+            <input type="checkbox" name="game" value="	Lego Batman	:	2.00	">	Lego Batman (2,00 GB)	<br>
+            <input type="checkbox" name="game" value="	Los simpsons the videogame	:	4.28	">	Los simpsons the videogame (4,28 GB)	<br>
+            <input type="checkbox" name="game" value="	Madagascar 2 	:	2.72	">	Madagascar 2 (2,72 GB)	<br>
+            <input type="checkbox" name="game" value="	Madden NFL 11	:	1.34	">	Madden NFL 11 [Inglés]  (1,34 GB)	<br>
+            <input type="checkbox" name="game" value="	Manhunt 2	:	2.47	">	Manhunt 2 (2,47 GB)	<br>
+            <input type="checkbox" name="game" value="	Mario Collection 	:	0.069	">	Mario Collection (69,0 MB)	<br>
+            <input type="checkbox" name="game" value="	Marvel vs Capcom 2	:	0.199	">	Marvel vs Capcom 2 (199 MB)	<br>
+            <input type="checkbox" name="game" value="	Marvel Ultimate Aliance	:	1.50	">	Marvel Ultimate Aliance (1,50 GB)	<br>
+            <input type="checkbox" name="game" value="	Max Payne	:	4.17	">	Max Payne (4,17 GB)	<br>
+            <input type="checkbox" name="game" value="	Max Payne 2	:	3.71	">	Max Payne 2  (3,71 GB)	<br>
+            <input type="checkbox" name="game" value="	Medal of Honor Frontline	:	3.70	">	Medal of Honor- Frontline (3,70 GB)	<br>
+            <input type="checkbox" name="game" value="	Medalla de honor Rising Sun	:	4	">	Medalla de honor- Rising Sun (4,00 GB)	<br>
+            <input type="checkbox" name="game" value="	Medalla de honor Vanguard	:	4.13	">	Medalla de honor- Vanguard (4,13 GB)	<br>
+            <input type="checkbox" name="game" value="	Metal Gear solid 3 Snake Eater 	:	4.07	">	Metal Gear solid 3- Snake Eater  (4,07gb)	<br>
+            <input type="checkbox" name="game" value="	Metal Slug Anthology	:	1.28	">	Metal Slug Anthology [Inglés] (1,28 GB)	<br>
+            <input type="checkbox" name="game" value="	Minecraft BETA	:	43.9	">	Minecraft BETA (43,9 MB)	<br>
+            <input type="checkbox" name="game" value="	Michigan Report from Hell	:	3.82	">	Michigan Report from Hell (3,82 gb)	<br>
+            <input type="checkbox" name="game" value="	MLB 11 The Show	:	4.08	">	MLB 11 The Show (4,08 GB)	<br>
+            <input type="checkbox" name="game" value="	Monster Hunter	:	3.73	">	Monster Hunter [Español] (3,73 GB)	<br>
+            <input type="checkbox" name="game" value="	Monster Hunter 2	:	4.03	">	Monster Hunter 2 [Inglés- Japonés] (4,03 GB)	<br>
+            <input type="checkbox" name="game" value="	Mortal Kombat Armagedon	:	4.15	">	Mortal Kombat- Armagedon [Español]  (4,15 GB)	<br>
+            <input type="checkbox" name="game" value="	Mortal Kombat Deception	:	4.37	">	Mortal Kombat- Deception [Español] (4,37 GB)	<br>
+            <input type="checkbox" name="game" value="	Mortal Kombat 3 Ultimate	:	0.126	">	Mortal Kombat 3- Ultimate (SEGA CLASSIC) (126 MB)	<br>
+            <input type="checkbox" name="game" value="	Mortal Kombat Shaoling Monk	:	3.13	">	Mortal Kombat Shaoling Monk (3,13 GB)	<br>
+            <input type="checkbox" name="game" value="	Moto Gp4	:	4.15	">	Moto Gp4 (4,15 GB)	<br>
+            <input type="checkbox" name="game" value="	MTV Celebrity Deathmatch	:	3.43	">	MTV Celebrity Deathmatch (3,43 GB)	<br>
+            <input type="checkbox" name="game" value="	Namco Museum	:	1.62	">	Namco Museum (1,62 GB)	<br>
+            <input type="checkbox" name="game" value="	Naruto Shippuden Ultimate ninja 4	:	4.08	">	Naruto Shippuden- Ultimate ninja 4 (4,08 GB)	<br>
+            <input type="checkbox" name="game" value="	Naruto Shippuden Ultimate Ninja 5	:	1.79	">	Naruto Shippuden- Ultimate Ninja 5 (1,79 GB)	<br>
+            <input type="checkbox" name="game" value="	NBA 2K12	:	3.04	">	NBA 2K12 [Español] (3,04 GB)	<br>
+            <input type="checkbox" name="game" value="	Need for Speed Most wanted	:	3.81	">	Need for Speed- Most wanted [Español] (3,81 GB)	<br>
+            <input type="checkbox" name="game" value="	Need for Speed Undercover	:	3.44	">	Need for Speed- Undercover [Español] (3,44 GB)	<br>
+            <input type="checkbox" name="game" value="	Need for Speed Underground	:	2.53	">	Need for Speed- Underground (2,53 GB)	<br>
+            <input type="checkbox" name="game" value="	Need for Speed Underground 2	:	3.81	">	Need for Speed- Underground 2 (3,81 GB)	<br>
+            <input type="checkbox" name="game" value="	Nicktoons	:	1.43	">	Nicktoons (1,43 GB)	<br>
+            <input type="checkbox" name="game" value="	Obscure	:	2.90	">	Obscure (2,90 GB)	<br>
+            <input type="checkbox" name="game" value="	Obscure II	:	1.90	">	Obscure II (1,90 GB)	<br>
+            <input type="checkbox" name="game" value="	Okami	:	3.15	">	Okami [Español] (3,15 GB)	<br>
+            <input type="checkbox" name="game" value="	Onimusha 3 Demond Siege	:	4.36	">	Onimusha 3- Demond Siege (4,36 GB)	<br>
+            <input type="checkbox" name="game" value="	PES 4	:	1.71	">	PES 4 (1,71 GB)	<br>
+            <input type="checkbox" name="game" value="	PES 5 Legends 2	:	2.26	">	PES 5 Legends 2 (2,26 GB)	<br>
+            <input type="checkbox" name="game" value="	PES Futbol Argentino 2004	:	1.71	">	PES- Futbol Argentino 2004 (1,71 GB)	<br>
+            <input type="checkbox" name="game" value="	PES 2008 DKZ	:	3.97	">	PES 2008 DKZ (3,97 GB)	<br>
+            <input type="checkbox" name="game" value="	PES 2012	:	2.26	">	PES 2012 (2,26 GB)	<br>
+            <input type="checkbox" name="game" value="	PES 2013	:	1.98	">	PES 2013 (1,98 GB)	<br>
+            <input type="checkbox" name="game" value="	PES 2021	:	1.63	">	PES 2021 (1,63 GB)	<br>
+            <input type="checkbox" name="game" value="	Prince of Persia Las arenas del tiempo	:	2.24	">	Prince of Persia- Las arenas del tiempo [Español] (2,24 GB)	<br>
+            <input type="checkbox" name="game" value="	Prince of Persia Warrior within	:	3.81	">	Prince of Persia- Warrior within [Español] (3,81 GB)	<br>
+            <input type="checkbox" name="game" value="	Ratatouille	:	1.18	">	Ratatouille [Español] (1,18 GB)	<br>
+            <input type="checkbox" name="game" value="	Ratched & Clank 3	:	4.15	">	Ratched & Clank 3 [Esp] (4,15 GB)	<br>
+            <input type="checkbox" name="game" value="	Rayman 3	:	2.78	">	Rayman 3 (2,78 GB)	<br>
+            <input type="checkbox" name="game" value="	Rayman Revolution	:	4.18	">	Rayman Revolution (4,18 GB)	<br>
+            <input type="checkbox" name="game" value="	Red Dead Revolver	:	2.43	">	Red Dead Revolver [Español] (2,43 GB)	<br>
+            <input type="checkbox" name="game" value="	Red Faction	:	1.71	">	Red Faction (1,71 GB)	<br>
+            <input type="checkbox" name="game" value="	Red Faction II	:	3.68	">	Red Faction II (3,68 GB)	<br>
+            <input type="checkbox" name="game" value="	Reservoir dogs	:	3.46	">	Reservoir dogs [Español] (3,46 GB)	<br>
+            <input type="checkbox" name="game" value="	Resident Evil 4	:	2.71	">	Resident Evil 4 [ingles] (2,71 GB)	<br>
+            <input type="checkbox" name="game" value="	Resident Evil 4 Latino	:	4.25	">	Resident Evil 4 [Español latino] (4,25 GB)	<br>
+            <input type="checkbox" name="game" value="	Resident Evil Outbreak	:	2.41	">	Resident Evil- Outbreak (2,41 GB)	<br>
+            <input type="checkbox" name="game" value="	Resident Evil Outbreak file 2	:	4.57	">	Resident Evil- Outbreak file 2 (4.57 GB)	<br>
+            <input type="checkbox" name="game" value="	Rocky	:	2.48	">	Rocky (2,48 GB)	<br>
+            <input type="checkbox" name="game" value="	Rocky Legends	:	2.18	">	Rocky Legends (2,18 GB)	<br>
+            <input type="checkbox" name="game" value="	Rugby  08	:	1.27	">	Rugby  08 (1,27 GB)	<br>
+            <input type="checkbox" name="game" value="	Rule of Rose	:	2.53	">	Rule of Rose (2,53 GB)	<br>
+            <input type="checkbox" name="game" value="	Saint Seiya The Hades	:	3.71	">	Saint Seiya- The Hades (3,71 GB)	<br>
+            <input type="checkbox" name="game" value="	Scarface The world is yours	:	3.40	">	Scarface- The world is yours (3,40 GB)	<br>
+            <input type="checkbox" name="game" value="	Saint Seiya the sanctuary	:	1.59	">	Saint Seiya- the sanctuary (1,59 GB)	<br>
+            <input type="checkbox" name="game" value="	Sega Genesis collection	:	3.62	">	Sega- Genesis collection [Español]  (3,62 GB)	<br>
+            <input type="checkbox" name="game" value="	Shadow of Rome	:	4.37	">	Shadow of Rome (4,37 GB)	<br>
+            <input type="checkbox" name="game" value="	Shadow of the Colossus	:	4.31	">	Shadow of the Colossus (4,31 GB)	<br>
+            <input type="checkbox" name="game" value="	Shinobido Way of the ninja	:	3.64	">	Shinobido- Way of the ninja (3,64 GB)	<br>
+            <input type="checkbox" name="game" value="	Silent Hill 3	:	3.33	">	Silent Hill 3 [Español] (3,33 GB)	<br>
+            <input type="checkbox" name="game" value="	Silent Hill 4 The room	:	3.51	">	Silent Hill 4- The room [Español] (3,51 GB)	<br>
+            <input type="checkbox" name="game" value="	Silent Hill Origins	:	2.83	">	Silent Hill- Origins [Español] (2,83 GB)	<br>
+            <input type="checkbox" name="game" value="	Silent Hill Shattered Memories	:	1.31	">	Silent Hill- Shattered Memories [Español] (1,31 GB)	<br>
+            <input type="checkbox" name="game" value="	Sims 2	:	3.30	">	Sims 2 [Español] (3,30 GB)	<br>
+            <input type="checkbox" name="game" value="	Sims 2 Mascotas	:	3.97	">	Sims 2- Mascotas (3,97 GB)	<br>
+            <input type="checkbox" name="game" value="	Sniper Elite	:	2.48	">	Sniper Elite [Español] (2,48 GB)	<br>
+            <input type="checkbox" name="game" value="	SOCOM 3	:	4.2	">	SOCOM 3 (4,2gb)	<br>
+            <input type="checkbox" name="game" value="	Sonic Riders Zero Gravity	:	4.37	">	Sonic Riders- Zero Gravity [Español] (4,37 GB)	<br>
+            <input type="checkbox" name="game" value="	Sonic Unleashed	:	4.35	">	Sonic Unleashed [Español] (4,35 GB)	<br>
+            <input type="checkbox" name="game" value="	Spartan total warrior	:	2.04	">	Spartan total warrior (2,04 GB)	<br>
+            <input type="checkbox" name="game" value="	Spawn Armagedon	:	2.06	">	Spawn Armagedon (2,06 GB)	<br>
+            <input type="checkbox" name="game" value="	Spiderman 3	:	3.83	">	Spiderman 3 (3,83 GB)	<br>
+            <input type="checkbox" name="game" value="	Spyro Enter the Dragon	:	1.46	">	Spyro- Enter the Dragon (1,46 GB)	<br>
+            <input type="checkbox" name="game" value="	Star Wars Battlefront II	:	4.37	">	Star Wars- Battlefront II (4,37 GB)	<br>
+            <input type="checkbox" name="game" value="	Star Wars El poder de la fuerza	:	3.68	">	Star Wars El poder de la fuerza (3,68 GB)	<br>
+            <input type="checkbox" name="game" value="	State emergency 2	:	3.06	">	State emergency 2 (3,06 GB)	<br>
+            <input type="checkbox" name="game" value="	Street Fighter Anniversary collection	:	3.17	">	Street Fighter- Anniversary collection (3,17 GB)	<br>
+            <input type="checkbox" name="game" value="	Super SNES	:	0.544	">	Super SNES (544 MB)	<br>
+            <input type="checkbox" name="game" value="	SWAT Global Strike Team	:	2.8	">	SWAT Global Strike Team (2.8gb)	<br>
+            <input type="checkbox" name="game" value="	Tekken 4	:	4.16	">	Tekken 4 (4,16 GB)	<br>
+            <input type="checkbox" name="game" value="	Tenchu La ira del cielo	:	3.56	">	Tenchu- La ira del cielo (3,56 GB)	<br>
+            <input type="checkbox" name="game" value="	The King of Fighters 10 en 1	:	4.14	">	The King of Fighters 10 en 1 (4,14 GB)	<br>
+            <input type="checkbox" name="game" value="	The King of Fighters 98	:	3.07	">	The King of Fighters 98 (3,07 GB)	<br>
+            <input type="checkbox" name="game" value="	The Simpsons Hit and Run	:	1.53	">	The Simpsons Hit and Run (1,53 GB)	<br>
+            <input type="checkbox" name="game" value="	The Suffering	:	4.14	">	The Suffering [Español] (4,14 GB)	<br>
+            <input type="checkbox" name="game" value="	The Suffering 2	:	3.68	">	The Suffering 2 [Español] (3,68 GB)	<br>
+            <input type="checkbox" name="game" value="	The thing	:	1.43	">	The thing (1,43 GB)	<br>
+            <input type="checkbox" name="game" value="	The Warriors	:	3.97	">	The Warriors (3,97 GB)	<br>
+            <input type="checkbox" name="game" value="	Time Crisis 3	:	2.95	">	Time Crisis 3 (2.95 GB)	<br>
+            <input type="checkbox" name="game" value="	Time splitters Future perfect	:	4.12	">	Time splitters- Future perfect (4,12 GB)	<br>
+            <input type="checkbox" name="game" value="	Time splitters 2	:	4.37	">	Time splitters 2 [Español] (4,37 GB)	<br>
+            <input type="checkbox" name="game" value="	Tom Clancys Splinter Cell Double agent	:	2.72	">	Tom Clancy’s- Splinter Cell, Double agent [Español] (2,72 GB)	<br>
+            <input type="checkbox" name="game" value="	Tomb Raider Underworld	:	2.96	">	Tomb Raider Underworld (2,96 GB)	<br>
+            <input type="checkbox" name="game" value="	Tony Hawk Proyect 8	:	3.61	">	Tony Hawk’s- Proyect 8 (3,61 GB)	<br>
+            <input type="checkbox" name="game" value="	Tortugas ninjas Smash	:	1.49	">	Tortugas ninjas- Smash (1,49 GB)	<br>
+            <input type="checkbox" name="game" value="	Transformers The game	:	3.67	">	Transformers- The game [Español] (3,67 GB)	<br>
+            <input type="checkbox" name="game" value="	Twisted metal	:	1.63	">	Twisted metal- Black edition (1,63 GB)	<br>
+            <input type="checkbox" name="game" value="	UEFA 2004	:	4.37	">	UEFA 2004 (4,37 GB)	<br>
+            <input type="checkbox" name="game" value="	Ultimate Spiderman	:	3.86	">	Ultimate Spiderman (3,86 GB)	<br>
+            <input type="checkbox" name="game" value="	Urban Chaos Riot Response	:	4.32	">	Urban Chaos Riot Response (4,32 GB)	<br>
+            <input type="checkbox" name="game" value="	Urban Reign	:	3.85	">	Urban Reign (3,85 GB)	<br>
+            <input type="checkbox" name="game" value="	Van Healsing	:	2.13	">	Van Healsing (2,13 GB)	<br>
+            <input type="checkbox" name="game" value="	Wall E	:	3.00	">	Wall-e (3,00 GB)	<br>
+            <input type="checkbox" name="game" value="	Winning eleven 10	:	2.37	">	Winning eleven 10 (2,37 GB)	<br>
+            <input type="checkbox" name="game" value="	World soccer Winning eleven 10	:	1.65	">	World soccer- winning eleven 10 (1,65 GB)	<br>
+            <input type="checkbox" name="game" value="	WRC 3 The oficial game	:	2.72	">	WRC 3- The oficial game (2,72 GB)	<br>
+            <input type="checkbox" name="game" value="	WWE 2K17	:	3.35	">	WWE 2K17 [Español] (3,35 GB)	<br>
+
+        </form>
+
+    </div>
+    
+    <div>
+        <p>Capacidad utilizada: <span id="usedCapacity">0.00 GB</span> / <span id="totalCapacity">0.00 GB</span></p>
+    </div>
+    
+    <div>
+        <button id="calculateButton">Ver resultado</button>
+    </div>
+    
+    <div>
+        <div id="result">
+            <!-- Aquí se mostrará la lista final de juegos seleccionados -->
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <script>
+        const pendriveCapacity = {
+            8: 7,
+            16: 14.4,
+            32: 27.7,
+            64: 57
+        };
+        
+        const gameList = [
+            // Aquí puedes definir la lista de juegos con sus nombres y tamaños
+        ];
+        
+        const pendriveSelect = document.getElementById('pendrive');
+        const gameForm = document.getElementById('gameForm');
+        const calculateButton = document.getElementById('calculateButton');
+        const resultDiv = document.getElementById('result');
+        const usedCapacitySpan = document.getElementById('usedCapacity');
+        const totalCapacitySpan = document.getElementById('totalCapacity');
+        
+        let selectedGames = [];
+        
+        // Generar dinámicamente la lista de juegos con checkboxes
+        gameList.forEach(game => {
+            const [gameName, gameSize] = game.split(':');
+            const gameCheckbox = document.createElement('input');
+            gameCheckbox.type = 'checkbox';
+            gameCheckbox.name = 'game';
+            gameCheckbox.value = `${gameName}:${gameSize}`;
+            
+            const label = document.createElement('label');
+            label.textContent = `${gameName} (${gameSize} GB)`;
+            
+            gameForm.appendChild(gameCheckbox);
+            gameForm.appendChild(label);
+            gameForm.appendChild(document.createElement('br'));
+        });
+        
+        gameForm.addEventListener('change', () => {
+            selectedGames = Array.from(gameForm.querySelectorAll('input[type="checkbox"]:checked'));
+            let totalSize = 0;
+            
+            selectedGames.forEach(game => {
+                const [gameName, gameSize] = game.value.split(':');
+                totalSize += parseFloat(gameSize);
+            });
+            
+            const selectedPendrive = parseInt(pendriveSelect.value);
+            totalCapacitySpan.textContent = pendriveCapacity[selectedPendrive].toFixed(2) + ' GB';
+            usedCapacitySpan.textContent = totalSize.toFixed(2) + ' GB';
+            
+            if (totalSize > pendriveCapacity[selectedPendrive]) {
+                calculateButton.disabled = true;
+                resultDiv.innerHTML = '<p>¡Has excedido la capacidad del pendrive! Selecciona menos juegos o elige juegos más pequeños.</p>';
+            } else {
+                calculateButton.disabled = false;
+                resultDiv.innerHTML = '';
+            }
+        });
+        
+        calculateButton.addEventListener('click', () => {
+            const selectedPendrive = parseInt(pendriveSelect.value);
+            let totalSize = 0;
+            const selectedGameNames = [];
+            
+            selectedGames.forEach(game => {
+                const [gameName, gameSize] = game.value.split(':');
+                totalSize += parseFloat(gameSize);
+                selectedGameNames.push(gameName);
+            });
+            
+            if (totalSize > pendriveCapacity[selectedPendrive]) {
+                resultDiv.innerHTML = '<p>¡Has excedido la capacidad del pendrive! Selecciona menos juegos o elige juegos más pequeños.</p>';
+            } else {
+                resultDiv.innerHTML = '<p>Lista de juegos seleccionados:</p><ol>';
+                selectedGameNames.sort();
+                selectedGameNames.forEach((gameName, index) => {
+                    resultDiv.innerHTML += `<li>${gameName}</li>`;
+                });
+                resultDiv.innerHTML += '</ol><button id="copyButton">Copiar Lista</button>';
+                
+                const copyButton = resultDiv.querySelector('#copyButton');
+                copyButton.addEventListener('click', () => {
+                    const gamesListText = selectedGameNames.join('\n');
+                    navigator.clipboard.writeText(gamesListText)
+                        .then(() => {
+                            alert('La lista de juegos ha sido copiada al portapapeles.');
+                        })
+                        .catch(err => {
+                            console.error('Error al copiar al portapapeles:', err);
+                        });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
